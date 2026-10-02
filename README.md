@@ -172,5 +172,82 @@ The design is intended to feel more like a personal command center than a tradit
 
 </div>
 
-### ✧ Let's Get Started  ✧
+## 🚀 Installation & Setup
 
+Follow the steps below to install and activate the **Nexus Tab** Chrome Extension.
+
+### 📦 1. Extract the Downloaded File
+
+After downloading the project, locate the downloaded `.zip` file and **extract it** to a convenient location on your computer.
+
+Once extracted, open the extracted project folder.
+
+---
+
+### 🌐 2. Open Chrome Extensions
+
+Open **Google Chrome** and create a **New Tab**.
+
+Then:
+
+1. Click the **three-dot menu (⋮)** in the top-right corner of Chrome.
+2. Select **Extensions**.
+3. Click **Manage Extensions**.
+
+You will now be redirected to Chrome's **Extensions Manager** page.
+
+---
+
+### 🛠️ 3. Enable Developer Mode
+
+On the **Extensions** page, look at the **top-right corner**.
+
+You will find the **Developer mode** option.
+
+Turn **Developer mode ON**.
+
+Once enabled, additional options will appear at the top-left of the page.
+
+---
+
+### 📂 4. Load the Extension
+
+After enabling Developer mode, you will see three options:
+
+1. **Load unpacked**
+2. **Pack extension**
+3. **Update** / **Upload**
+
+Click on **Load unpacked**.
+
+---
+
+### 📁 5. Select the Extension Folder
+
+A file selection window will appear.
+
+Navigate to the folder where you extracted the project.
+
+Open:
+
+```text
+Nexus-Tab
+└── glass-tab
+```
+
+Select the **`glass-tab`** folder and click **Select Folder**.
+
+Chrome will automatically load the extension.
+
+---
+
+### ✅ 6. Launch Nexus Tab
+
+Once the extension has been successfully added, you can either:
+
+* Open a **new Chrome tab**, or
+* Restart Chrome.
+
+After doing so, your new tab should now display the **Nexus Tab** interface. ✨
+
+🎉 **That's it! Nexus Tab is now installed and ready to use.**
