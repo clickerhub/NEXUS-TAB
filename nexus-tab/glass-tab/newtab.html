@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Tab</title>
+<link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+<div id="bg"></div><canvas id="bgc"></canvas><div id="veil"></div>
+
+<header id="top">
+  <div><h1 id="hello"></h1><p id="line"></p></div>
+  <div class="chips">
+    <button class="chip glass" id="wx" title="Weather (click to set your city)"><b id="wxT">--</b><span id="wxS">Set city</span></button>
+    <div class="chip glass prog" title="Progress through the year and the day">
+      <div><span>Year</span><i><u id="pY"></u></i><em id="pYv"></em></div>
+      <div><span>Day</span><i><u id="pD"></u></i><em id="pDv"></em></div>
+    </div>
+    <button class="chip glass sq" id="gear" aria-label="Settings" data-i="sliders"></button>
+  </div>
+</header>
+
+<main>
+  <section id="hero">
+    <div id="clock"><span id="hm"></span><small id="ap"></small></div>
+    <div id="ticks"></div>
+    <div id="dt"></div>
+  </section>
+
+  <div id="cmdw">
+    <div id="cmd" class="glass glow">
+      <span class="si" data-i="search"></span>
+      <input id="q" type="text" placeholder="Search, open a link, or type a command" autocomplete="off" spellcheck="false" autofocus>
+      <kbd>Ctrl K</kbd>
+    </div>
+    <div id="sug" class="glass" hidden></div>
+    <p id="hint">Try: <code>= 24*7</code> <code>t 25</code> <code>yt lofi</code> <code>todo call mom</code> <code>theme neon</code></p>
+  </div>
+
+  <div id="bento">
+    <section class="w glass" id="wTasks">
+      <h2>Tasks <em id="tCount"></em></h2>
+      <form id="tForm"><input id="tIn" type="text" placeholder="Add a task, press Enter" autocomplete="off"></form>
+      <ul id="tList"></ul>
+    </section>
+    <section class="w glass" id="wFocus">
+      <h2>Focus <em id="fSess"></em></h2>
+      <div class="seg" id="fModes">
+        <button data-m="focus">Focus</button><button data-m="short">Short</button><button data-m="long">Long</button>
+      </div>
+      <div id="fRing">
+        <svg viewBox="0 0 120 120"><circle class="t" cx="60" cy="60" r="54"/><circle class="p" id="fArc" cx="60" cy="60" r="54"/></svg>
+        <div id="fTime"></div>
+      </div>
+      <div class="frow"><button id="fGo" class="rb" data-i="play" aria-label="Start or pause"></button><button id="fReset" class="rb" data-i="reset" aria-label="Reset"></button></div>
+    </section>
+    <section class="w glass" id="wNotes">
+      <h2>Scratchpad</h2>
+      <textarea id="note" placeholder="Think here. It saves itself." spellcheck="false"></textarea>
+    </section>
+  </div>
+</main>
+
+<nav id="dock" class="glass"></nav>
+
+<aside id="drawer">
+  <div class="dh"><h2>Settings</h2><button class="rb" id="dClose" data-i="x" aria-label="Close"></button></div>
+  <label>Your name <input data-k="name" type="text" placeholder="For the greeting"></label>
+  <label>Weather city <input data-k="city" id="cityIn" type="text" placeholder="e.g. Jaipur"></label>
+  <div class="lab">Theme</div>
+  <div id="themes"></div>
+  <div class="lab">Background</div>
+  <div class="row2"><button id="upBg">Upload image or video</button><button id="resetBg">Use live background</button></div>
+  <label>Glass blur <input data-k="blur" type="range" min="0" max="40"></label>
+  <label>Default search
+    <select data-k="engine"><option value="g">Google</option><option value="ddg">DuckDuckGo</option><option value="yt">YouTube</option></select>
+  </label>
+  <label class="chk"><input data-k="h24" type="checkbox"> 24-hour clock</label>
+  <label class="chk"><input data-k="ticks" type="checkbox"> Seconds ticks</label>
+  <label class="chk"><input data-k="particles" type="checkbox"> Interactive particles</label>
+  <div class="lab">Widgets</div>
+  <label class="chk"><input data-k="showTasks" type="checkbox"> Tasks</label>
+  <label class="chk"><input data-k="showFocus" type="checkbox"> Focus timer</label>
+  <label class="chk"><input data-k="showNotes" type="checkbox"> Scratchpad</label>
+  <input id="file" type="file" accept="image/*,video/*" hidden>
+</aside>
+
+<dialog id="dlg" class="glass">
+  <form method="dialog" id="lf">
+    <h2>Add to dock</h2>
+    <input id="ln" type="text" placeholder="Name (e.g. YouTube)" required>
+    <input id="lu" type="text" placeholder="Address (e.g. youtube.com)" required>
+    <div class="row2"><button value="cancel" formnovalidate>Cancel</button><button value="ok" class="pri">Add</button></div>
+  </form>
+</dialog>
+
+<script src="newtab.js"></script>
+</body>
+</html>
