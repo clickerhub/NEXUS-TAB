@@ -251,3 +251,5 @@ Once the extension has been successfully added, you can either:
 After doing so, your new tab should now display the **Nexus Tab** interface. ✨
 
 🎉 **That's it! Nexus Tab is now installed and ready to use.**
+
+**IF YOU FIND ANY PROBLEM/ERROR CONTACT ME ON MY DISCORD SERVER [PROVIDED ON MY PROFILE],OR JUST EMIAL ME [PROVIDED ON MY PROFILE]**
