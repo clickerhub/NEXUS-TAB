@@ -1,4 +1,4 @@
-# ✦ Neon New Tab
+# ✦ Nexus New Tab
 
 > A futuristic, minimal, productivity-focused Chrome new-tab dashboard built to turn every new tab into a clean workspace.
 
@@ -168,7 +168,7 @@ The design is intended to feel more like a personal command center than a tradit
 
 ### ✧ Built for focus. Designed for the future. ✧
 
-**Neon New Tab**
+**Nexus New Tab**
 
 </div>
 
